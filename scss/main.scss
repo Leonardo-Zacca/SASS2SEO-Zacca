@@ -4,7 +4,11 @@
     box-sizing: border-box;
 }
 
-@import './secciones/colores';
+@import './variables/colores';  //colores de letras y fondos
+@import './variables/typo';  //tipos de letras
+@import './variables/tamanios';
+@import './secciones/mainindex';
+@import './variables/extend';
 
 header {
     .navbar-background {
@@ -13,6 +17,8 @@ header {
 
     .nav-link {
         color: $rojo  !important;
+        font-family: $serif;
+
 
         &:hover {
             color: $naranja  !important;
@@ -20,13 +26,12 @@ header {
     }
 
     .dropdown-item {
-        color: $rojo;
-        background-color: $azul;
+        @extend %dropdown-item;
     }
 
     .logo {
         height: auto;
-        max-width: 10rem;
+        max-width: $logo - 10rem;
     }
 
     .btn-outline-success {
@@ -42,10 +47,7 @@ header {
 }
 
 main {
-    background-image: url(../images/BackgroundMain.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    @extend %main;
 
     p {
         color: $azul;
@@ -63,11 +65,7 @@ main {
 
     //Cards
     .card {
-        background-color: $gris;
-        max-width: 20rem;
-        display: flex;
-        align-items: center;
-        border-radius: 10px;
+        @include card(rgba(170, 160, 160, 0.801));
 
         &:hover {
             border-color: $naranja;

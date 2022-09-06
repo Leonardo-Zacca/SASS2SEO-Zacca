@@ -1,19 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
+p {
+  color: #1d6183 !important; }
+
+header .dropdown-item {
+  color: #C64928;
+  background-color: #033249;
+  font-family: "Merriweather", serif; }
+
+main {
+  background-image: url(../images/BackgroundMain.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+
 header .navbar-background {
   background-color: #033249; }
 
 header .nav-link {
-  color: #C64928 !important; }
+  color: #C64928 !important;
+  font-family: "Merriweather", serif; }
   header .nav-link:hover {
     color: #FEA82F !important; }
-
-header .dropdown-item {
-  color: #C64928;
-  background-color: #033249; }
 
 header .logo {
   height: auto;
@@ -27,45 +39,46 @@ header .btn-outline-success {
     border-color: #FEA82F;
     background-color: #C64928; }
 
-main {
-  background-image: url(../images/BackgroundMain.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover; }
-  main p {
-    color: #033249; }
-  main .texto {
-    color: #C64928; }
-  main .btn-primary {
-    margin: 5px;
+main p {
+  color: #033249; }
+
+main .texto {
+  color: #C64928; }
+
+main .btn-primary {
+  margin: 5px;
+  background-color: #1d6183;
+  border-color: #033249; }
+
+main .card {
+  background-color: rgba(170, 160, 160, 0.801);
+  max-width: 20rem;
+  display: flex;
+  align-items: center;
+  border-radius: 10px; }
+  main .card:hover {
+    border-color: #FEA82F;
+    border-width: 2px; }
+
+main .card-image {
+  height: auto;
+  max-width: 20rem;
+  border-radius: 10px; }
+
+main .card-button {
+  color: #C64928;
+  background-color: #033249;
+  border-radius: 5px; }
+  main .card-button:hover {
+    color: #FEA82F;
     background-color: #1d6183;
-    border-color: #033249; }
-  main .card {
-    background-color: #cac8c8;
-    max-width: 20rem;
-    display: flex;
-    align-items: center;
-    border-radius: 10px; }
-    main .card:hover {
-      border-color: #FEA82F;
-      border-width: 2px; }
-  main .card-image {
-    height: auto;
-    max-width: 20rem;
-    border-radius: 10px; }
-  main .card-button {
-    color: #C64928;
-    background-color: #033249;
-    border-radius: 5px; }
-    main .card-button:hover {
-      color: #FEA82F;
-      background-color: #1d6183;
-      border-color: #C64928; }
-  main .card-grid {
-    display: grid;
-    gap: 1em;
-    justify-items: center;
-    grid-template-columns: 1fr 1fr 1fr; }
+    border-color: #C64928; }
+
+main .card-grid {
+  display: grid;
+  gap: 1em;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr; }
 
 footer {
   background-color: #033249; }
